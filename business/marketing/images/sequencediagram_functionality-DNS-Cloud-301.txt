@@ -1,0 +1,27 @@
+title Functionality 
+
+participant Browser
+participant "DNS\nClient" as DNSClient
+participant "DNS\nServer" as DNSServer
+
+participant "Webserver at\n216.239.32.21" as Webserver1
+database "data\nbackend" as databackend
+participant "Webserver\nSomewhere" as WebserverPortal
+
+Browser->DNSClient:What is\nmeltemi.prdv.de?
+DNSClient->DNSServer:What is\n meltemi.prdv.de?
+DNSClient<-DNSServer:Try 216.239.32.21
+Browser<-DNSClient:Try 216.239.32.21
+
+Browser->Webserver1:GET
+Webserver1->databackend:GET mapping info
+Webserver1<-databackend:here you are
+
+Webserver1->Webserver1:API endpoint\nto self-serve\nmapping info
+
+Browser<-Webserver1:redirect 301
+
+Browser->WebserverPortal: GET
+Browser<-WebserverPortal: here you are
+
+note over WebserverPortal,Webserver1:The first webserver does not\ndeliver content but just a redirect\non HTTP protocol level.

@@ -1,0 +1,12 @@
+runtime: python37
+env: standard
+entrypoint: gunicorn -b :$PORT app-dns-cloud-301:app
+service: dns-cloud-301-python
+manual_scaling:
+  instances: 4
+liveness_check:
+  path: "/liveness_check"
+  check_interval_sec: 30
+  timeout_sec: 4
+  failure_threshold: 2
+  success_threshold: 2

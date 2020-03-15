@@ -1,0 +1,14 @@
+{
+    "redirect_urls": [
+        {
+            "id": 1,
+            "source": "T530-2018",
+            "target": "https://weissenberg-solutions.atlassian.net/servicedesk/customer/portal/10"
+        },
+        {
+            "id": 2,
+            "source": "localhost",
+            "target": "http://T530-2018:5000"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+[core]
+disable_usage_reporting = false
+account = cprior@gmail.com
+project = wbi-gcloud
+
+[compute]
+
+[app]
+promote_by_default = false
+

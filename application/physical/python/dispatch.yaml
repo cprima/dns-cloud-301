@@ -1,0 +1,7 @@
+dispatch:
+  - url: "kunden.rpasupport.de/*"
+    service: dns-cloud-301-python
+  - url: "kundenportal.rpasupport.de/*"
+    service: dns-cloud-301-python
+  - url: "meltemi.prdv.de/*"
+    service: dns-cloud-301-python
