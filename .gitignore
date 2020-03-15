@@ -1,0 +1,10 @@
+*~
+*.sw[mnpcod]
+*.log
+*.tmp
+*.tmp.*
+log.txt
+*.pyc
+.vscode
+
+wbi-gcloud-417f7dcdaaae.json

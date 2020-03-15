@@ -1,0 +1,9 @@
+{
+    "redirect_urls": [
+        {
+            "id": 1,
+            "source": "kunden.rpasupport.de",
+            "target": "https://weissenberg-solutions.atlassian.net/servicedesk/customer/portal/10"
+        }
+    ]
+}

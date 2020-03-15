@@ -1,0 +1,5 @@
+dispatch:
+  - url: "kunden.rpasupport.de/*"
+    service: cname-cloud-301-python
+  - url: "kundenportal.rpasupport.de/*"
+    service: cname-cloud-301-python
